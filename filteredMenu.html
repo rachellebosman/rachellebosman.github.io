@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/style-menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <title>Menu</title>
   </head>
   <body>
@@ -10,13 +14,15 @@
 
     <div id="app">
       <div class="categorie-btn" v-for="data in categorie">
-        <a :href="'menu' + data + '.html'"><h3>{{data}}</h3> </a>
+        <a class="link-to-filter" :href="'menu' + data + '.html'"
+          ><h2>{{data}}</h2>
+        </a>
       </div>
     </div>
 
     <div class="button-back">
       <a href="menu.html">
-        <h3 class="margin-extra">Vorige pagina</h3>
+        <h2 class="margin-extra">Vorige pagina</h2>
       </a>
     </div>
 

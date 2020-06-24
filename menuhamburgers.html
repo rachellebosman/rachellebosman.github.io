@@ -7,14 +7,14 @@
     <title>Menu</title>
   </head>
   <body>
-    <div class="title"> <h1 class="padding-text">SOEPEN</h1> </div>
+    <div class="title"> <h1 class="padding-text">HAMBURGERS</h1> </div>
 
     <div id="app">
 
     
     <div class="menu-categorie" >
       <div v-for="data in menu"> 
-        <div class="categorie-btn" v-if="data.categorie=='soepen'" > 
+        <div class="categorie-btn" v-if="data.categorie=='hamburgers'" > 
             <h2 class="margin-categorie">{{data.name}} </h2>  <button class="sound-btn"  v-on:click="read(data.name)" > <img src="src/sound.svg"> </button>
         </div>
       </div>
