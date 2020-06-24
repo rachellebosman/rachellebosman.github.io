@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Scanner</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="container-btn">
+        <a id="btn-scan-qr">
+          <h1>SCAN DE KAART</h1>
+        </a>
+      </div>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <span id="outputUrl"></span>
+
+      <div id="qr-result" hidden="">
+        <div>
+          <span id="outputData"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/qrCodeScanner.js"></script>
+  </body>
+</html>

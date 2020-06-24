@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style-menu.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="title"><h1 class="padding-text padding-extra">FILTERS</h1></div>
+
+    <div id="app">
+      <div class="categorie-btn" v-for="data in categorie">
+        <a :href="'menu' + data + '.html'"><h3>{{data}}</h3> </a>
+      </div>
+    </div>
+
+    <div class="button-back">
+      <a href="menu.html">
+        <h3 class="margin-extra">Vorige pagina</h3>
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+.menu-categorie {
+  margin-left: 30px;
+  padding-top: 5px;
+}
+
+h3 {
+  padding-top: 8px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+.title {
+  background-color: #403a7d;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  border-radius: 0 30px 30px 0;
+}
+
+.filter-button,
+.categorie-btn {
+  background-color: #ebebeb;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.button-back {
+  background-color: #ebebeb;
+  width: 200px;
+  height: 40px;
+  border-radius: 0 30px 30px 0;
+}
+
+.sub-categorie {
+  background-color: #8282cf;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+  border-radius: 0 30px 30px 0;
+}
+
+.margin-extra {
+  margin-left: 30px;
+}
+
+.padding-extra {
+  padding-top: 8px;
+}
+
+.margin-categorie {
+  margin-top: -1px;
+}
+
+.sound-btn {
+  border: none;
+  background: none;
+  margin-left: 10px;
+}
+
+.categorie-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style-menu.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="title"> <h1 class="padding-text">MENU</h1> </div>
+
+    <div class="filter-button">
+        <a href="filteredMenu.html"> 
+            <h3> Filter het menu </h3>
+        </a>
+    </div> 
+
+    <div id="app">
+
+    <div class="sub-categorie">  <h2> SOEPEN </h2> </div>
+    <div class="menu-categorie" >
+      <div v-for="data in menu"> 
+        <div v-if="data.categorie=='soepen'" > 
+            <h3>{{data.name}}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-categorie"> <h2> PANNENKOEKEN  </h2> </div>
+    <div class="menu-categorie" >
+      <div v-for="data in menu"> 
+        <div v-if="data.categorie=='Pannenkoeken'" > 
+            <h3>{{data.name}}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-categorie"> <h2> HAMBURGERS  </h2> </div>
+    <div class="menu-categorie" >
+      <div v-for="data in menu"> 
+        <div v-if="data.categorie=='hamburgers'" > 
+            <h3>{{data.name}}</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+  </body>
+</html>
