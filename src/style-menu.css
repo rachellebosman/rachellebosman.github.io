@@ -105,3 +105,13 @@ a:visited {
 .link-to-filter {
   margin-top: -55px;
 }
+
+.sound-btn-menu {
+  margin-top: 15px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

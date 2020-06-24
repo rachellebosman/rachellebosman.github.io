@@ -17,6 +17,9 @@
         <a class="link-to-filter" :href="'menu' + data + '.html'"
           ><h2>{{data}}</h2>
         </a>
+        <button class="sound-btn" v-on:click="read(data)">
+          <img src="src/sound.svg" />
+        </button>
       </div>
     </div>
 

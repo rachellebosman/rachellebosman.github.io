@@ -14,7 +14,7 @@
     
     <div class="menu-categorie" >
       <div v-for="data in menu"> 
-        <div class="categorie-btn" v-if="data.categorie=='pannenkoeken'" > 
+        <div class="categorie-btn" v-if="data.categorie=='Pannenkoeken'" > 
             <h2 class="margin-categorie">{{data.name}} </h2>  <button class="sound-btn"  v-on:click="read(data.name)" > <img src="src/sound.svg"> </button>
         </div>
       </div>

@@ -19,9 +19,12 @@
 
     <div class="sub-categorie">  <h2> SOEPEN </h2> </div>
     <div class="menu-categorie" >
-      <div v-for="data in menu"> 
-        <div v-if="data.categorie=='soepen'" > 
+      <div  v-for="data in menu"> 
+        <div class="flex"v-if="data.categorie=='soepen'" > 
             <h3>{{data.name}}</h3>
+            <button class="sound-btn sound-btn-menu" v-on:click="read(data.name)">
+              <img src="src/sound.svg" />
+            </button>
         </div>
       </div>
     </div>
@@ -29,8 +32,12 @@
     <div class="sub-categorie "> <h2> PANNENKOEKEN  </h2> </div>
     <div class="menu-categorie" >
       <div v-for="data in menu"> 
-        <div v-if="data.categorie=='Pannenkoeken'" > 
-            <h3>{{data.name}}</h3>
+        <div class="flex"  v-if="data.categorie=='Pannenkoeken'" > 
+            <h3>{{data.name}}
+            </h3>
+            <button class="sound-btn sound-btn-menu" v-on:click="read(data.name)">
+              <img src="src/sound.svg" />
+            </button>
         </div>
       </div>
     </div>
@@ -38,8 +45,11 @@
     <div class="sub-categorie"> <h2> HAMBURGERS  </h2> </div>
     <div class="menu-categorie" >
       <div v-for="data in menu"> 
-        <div v-if="data.categorie=='hamburgers'" > 
+        <div class="flex" v-if="data.categorie=='hamburgers'" > 
             <h3>{{data.name}}</h3>
+            <button class="sound-btn sound-btn-menu" v-on:click="read(data.name)">
+              <img src="src/sound.svg" />
+            </button>
         </div>
       </div>
     </div>

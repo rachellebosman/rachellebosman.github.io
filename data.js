@@ -18,7 +18,7 @@ var app = new Vue({
         {
           id: 2,
           categorie: "soepen",
-          name: "Groenten soep",
+          name: "Groentesoep",
         },
 
         {
@@ -72,7 +72,7 @@ var app = new Vue({
         {
           id: 11,
           categorie: "hamburgers",
-          name: "Hamburger met bacon",
+          name: "Bacon hamburger",
         },
 
         {
